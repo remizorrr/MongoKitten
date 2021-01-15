@@ -3,7 +3,7 @@ public final class MongoTransaction {
     private var _startTransaction = true
     public let autocommit: Bool
     
-    init(number: Int, autocommit: Bool) {
+    public init(number: Int, autocommit: Bool) {
         self.number = number
         self.autocommit = autocommit
     }

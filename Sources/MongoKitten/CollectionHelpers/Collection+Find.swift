@@ -50,7 +50,7 @@ public final class FindQueryBuilder: QueryCursor {
     public var eventLoop: EventLoop { collection.eventLoop }
     public var hoppedEventLoop: EventLoop? { collection.hoppedEventLoop }
 
-    init(command: FindCommand, collection: MongoCollection, connection: EventLoopFuture<MongoConnection>, transaction: MongoTransaction? = nil) {
+    public init(command: FindCommand, collection: MongoCollection, connection: EventLoopFuture<MongoConnection>, transaction: MongoTransaction? = nil) {
         self.command = command
         self.connection = connection
         self.collection = collection
